@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>banking page</title>
+</head>
+<body>
+    <header id="header">
+        <h1 class="text-5xl text-center mt-10 mb-10">
+            Let's get some <span class="font-semibold text-sky-400"> mooooony!!! </span>
+        </h1>
+    </header>
+    <main class="w-3/4  mx-auto">
+        <section class="accountDetailes">
+            <div class="grid grid-cols-3 mt-10 text-white">
+                <div class="deposite bg-indigo-300 rounded-lg p-5 w-4/5 mx-auto text-center">
+                    <h2 class="text-2xl mb-2">Diposite</h2>
+                    <h2 class="text-4xl font-medium"> $<span id="deposit-field">00</span> </h2>
+                </div>
+                <div class="deposite bg-emerald-200 rounded-lg p-5 w-4/5 mx-auto text-center">
+                    <h2 class="text-2xl mb-2">Withdraw</h2>
+                    <h2 class="text-4xl font-medium"> $<span id="withdraw-field">00</span> </h2>
+                </div>
+                <div class="deposite bg-cyan-300 rounded-lg p-5 w-4/5 mx-auto text-center">
+                    <h2 class="text-2xl mb-2">Balance</h2>
+                    <h2 class="text-4xl font-medium"> $<span id="balance-field">00</span> </h2>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mt-10" id="depositAndWithdraw">
+            <div class="grid grid-cols-2 gap-6">
+                <div class="deposit bg-teal-100 rounded-lg p-6 text-center">
+                    <h3 class="font-semibold text-2xl text-slate-500" id="depositHeader">
+                        Please, Deposit money
+                    </h3>
+                    <div class="my-4">
+                        <input class="block w-3/4 mx-auto rounded px-3 py-2 mb-3" type="text" name="" id="depositInput" placeholder="write your amound">
+                        <input class="block w-3/4 mx-auto rounded px-3 py-2 mb-3" type="password" name="" id="depositPassword" placeholder="enter password">
+                        <button id="depositButton" class="bg-cyan-300 text-white px-8 py-2 rounded mt-3 font-medium">Deposit</button>
+                    </div>
+                </div>
+                <div class="withdraw bg-violet-100 rounded-lg p-6 text-center">
+                    <h3 class="font-semibold text-2xl text-slate-500" id="withdrawHeader">
+                        Please, Withdraw money
+                    </h3>
+                    <div class="my-4">
+                        <input class="block w-3/4 mx-auto rounded px-3 py-2 mb-3" type="text" name="" id="withdrawInput" placeholder="write your amound">
+                        <input class="block w-3/4 mx-auto rounded px-3 py-2 mb-3" type="password" name="" id="withdrawPassword" placeholder="enter password">
+                        <button id="withdrawButton" class="bg-rose-300 text-white px-8 py-2 rounded mt-3 font-medium">withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- script -->
+    <!-- <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script> -->
+    <script src="js/functional.js"></script>
+</body>
+</html>

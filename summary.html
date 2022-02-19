@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <header id="header">
+        <div class="w-3/4 mx-auto text-center py-10" id="welcome">
+            <h1 class="text-5xl" id="headerTitle"> Welcome to our <span id="bankName" class="text-emerald-400">Matir Bank!!!</span></h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <h3 id="logIn" class="text-2xl text-center py-7 text-rose-500">
+            Please, log in
+        </h3>
+        <div id="form" class="p-8 bg-slate-300 w-3/4 mx-auto rounded-xl">
+            <input class="w-3/4 block mx-auto rounded px-5 py-3 mb-5" type="email" id="email" placeholder="enter your mail">
+            <input class="w-3/4 block mx-auto rounded px-5 py-3 mb-5" type="password" name="" id="password" placeholder="enter your password">
+            <button class="block mx-auto w-1/4 bg-green-300 text-white rounded px-5 py-3 font-sans" id="button">Log in</button>
+        </div>
+    </main>
+
+
+
+
+
+    <script>
+        document.getElementById('button').addEventListener('click', function(){
+            const emailField = document.getElementById('email');
+            // emailField = 'jaberkhan@gmail.com';
+            const userEmail = emailField.value;
+            const passwordField = document.getElementById('password');
+            // passwordField = 'jaberkhan'
+            const userPassword = passwordField.value;
+            if((userEmail == 'jaberkhan@gmail.com') && (userPassword == 'jaberkhan')){
+                location.href = 'banking.html'
+            }
+            else{
+                alert('abar try koren!!');
+            }
+            emailField.value = '';
+            passwordField.value = '';
+        });
+
+        
+    </script>
+
+
+</body>
+</html>
